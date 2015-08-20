@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>Float Social</name>
+    <author>ShakingWeb.com</author>
+    <creationDate>Agosto 2013</creationDate>
+    <copyright>Copyleft () 2013</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html GNU/GPLv2</license>
+    <authorEmail>contacto@shakingweb.com</authorEmail>
+    <authorUrl>http://www.shakingweb.com</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_FLOAT_SOCIAL_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_float_social">mod_float_social.php</filename>
+        <filename>mod_float_social.xml</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_float_social.xml</filename>
+        <filename>lgpl.txt</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>css/index.html</filename>
+        <filename>css/mod_float_social.css</filename>
+        <filename>languages/index.html</filename>
+    </files>
+    
+    <languages>
+        <language tag="en-GB">languages/en-GB.mod_float_social.ini</language>
+        <language tag="es-LA">languages/es-LA.mod_float_social.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="position" type="radio" default="left" label="MOD_FLOAT_SOCIAL_POSITION_LABEL" description="MOD_FLOAT_SOCIAL_POSITION_DESC">
+                    <option value="left">MOD_FLOAT_SOCIAL_POSITION_LEFT</option>
+                    <option value="right">MOD_FLOAT_SOCIAL_POSITION_RIGHT</option>
+                </field>
+                <field name="googleplus" type="spacer" class="text" label="MOD_FLOAT_SOCIAL_GOOGLE_LABEL"/>
+                <field name="google_plus_button_language" type="list" default="es-419" label="MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_DESC">
+                    <option value="es">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_ES</option>
+                    <option value="es-419">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_ES_419</option>
+                    <option value="en-GB">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_EN_GB</option>
+                    <option value="en-EN">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_EN_EN</option>
+                </field>
+                <field name="google_plus_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_GOOGLE_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_GOOGLE_BUTTON_DESC" />
+                <field name="spacer1" type="spacer" default="" label="" description="" />
+        
+                <field name="facebook" type="spacer" class="text" label="MOD_FLOAT_SOCIAL_FACEBOOK_LABEL" />
+<!--        <field name="facebook_button_data_show_faces" type="list" default="no" label="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_LABEL" description="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_DESC">
+            <option value="yes">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_YES</option>
+            <option value="no">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_NO</option>
+        </field>-->
+<!--        <field name="facebook_button_data_send" type="list" default="no" label="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_LABEL" description="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_DESC">
+            <option value="yes">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_YES</option>
+            <option value="no">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_NO</option>
+        </field>-->
+                <field name="facebook_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_FACEBOOK_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_FACEBOOK_BUTTON_DESC" />
+                <field name="spacer2" type="spacer" default="" label="" description="" />
+        
+                <field name="twitter" type="spacer" class="text" label="MOD_FLOAT_SOCIAL_TWITTER_LABEL" />
+                <field name="twitter_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_TWITTER_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_TWITTER_BUTTON_DESC" />
+                <field name="twitter_button_via" type="text" default="" label="MOD_FLOAT_SOCIAL_VIA_TWITTER_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_VIA_TWITTER_BUTTON_DESC" />
+                <field name="spacer3" type="spacer" default="" label="" description="" />
+        
+                <field name="linkedin" type="spacer" class="text" label="MOD_FLOAT_SOCIAL_LINKEDIN_LABEL" />
+                <field name="linkedin_button_language" type="list" default="es_ES" label="MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_DESC">
+                    <option value="es_ES">MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_ES</option>
+                    <option value="en_US">MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_EN_US</option>
+                </field>
+                <field name="linkedin_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_LINKEDIN_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_LINKEDIN_BUTTON_DESC" />
+            </fieldset>
+            
+<!--            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="MOD_LANGUAGES_FIELD_MODULE_LAYOUT_DESC"/>
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
+                <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+                <field name="cachemode" type="hidden" default="itemid">
+                    <option value="itemid"/>
+                </field>
+            </fieldset>-->
+        </fields>
+    </config>
+    
+    
+</extension>

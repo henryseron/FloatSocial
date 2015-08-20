@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5">
+    <name>Float Social</name>
+    <author>ShakingWeb.com</author>
+    <creationDate>Agosto 2013</creationDate>
+    <copyleft>Copyleft () 2013</copyleft>
+    <license>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html GNU/GPLv2</license>
+    <authorEmail>contacto@shakingweb.com</authorEmail>
+    <authorUrl>http://www.shakingweb.com</authorUrl>
+    <version>1.0.0</version>
+    <description>MOD_FLOAT_SOCIAL_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_float_social">mod_float_social.php</filename>
+        <folder>tmpl</folder>
+        <folder>css</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_float_social.xml</filename>
+        <filename>lgpl.txt</filename>
+    </files>
+    
+    <languages folder="language">
+        <language tag="en-EN">en-EN/en-EN.mod_float_social.ini</language>
+        <language tag="es-ES">es-ES/es-ES.mod_float_social.ini</language>
+    </languages>
+    
+    <params>
+        <param name="position" type="radio" default="left" label="MOD_FLOAT_SOCIAL_POSITION_LABEL" description="MOD_FLOAT_SOCIAL_POSITION_DESC">
+            <option value="left">MOD_FLOAT_SOCIAL_POSITION_LEFT</option>
+            <option value="right">MOD_FLOAT_SOCIAL_POSITION_RIGHT</option>
+        </param>
+        <param name="googleplus" type="" default="" label="MOD_FLOAT_SOCIAL_GOOGLE_LABEL" description="" />
+        <param name="google_plus_button_language" type="list" default="es-419" label="MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_DESC">
+            <option value="es">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_ES</option>
+            <option value="es-419">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_ES_419</option>
+            <option value="en-GB">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_EN_GB</option>
+            <option value="en-EN">MOD_FLOAT_SOCIAL_LANGUAGE_GOOGLE_BUTTON_EN_EN</option>
+        </param>
+        <param name="google_plus_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_GOOGLE_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_GOOGLE_BUTTON_DESC" />
+        <param name="spacer1" type="spacer" default="" label="" description="" />
+        
+        <param name="facebook" type="" default="no" label="MOD_FLOAT_SOCIAL_FACEBOOK_LABEL" description="" />
+<!--        <param name="facebook_button_data_show_faces" type="list" default="no" label="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_LABEL" description="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_DESC">
+            <option value="yes">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_YES</option>
+            <option value="no">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SHOW_FACES_NO</option>
+        </param>-->
+<!--        <param name="facebook_button_data_send" type="list" default="no" label="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_LABEL" description="MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_DESC">
+            <option value="yes">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_YES</option>
+            <option value="no">MOD_FLOAT_SOCIAL_FACEBOOK_DATA_SEND_NO</option>
+        </param>-->
+        <param name="facebook_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_FACEBOOK_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_FACEBOOK_BUTTON_DESC" />
+        <param name="spacer2" type="spacer" default="" label="" description="" />
+        
+        <param name="twitter" type="" default="no" label="MOD_FLOAT_SOCIAL_TWITTER_LABEL" description="" />
+        <param name="twitter_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_TWITTER_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_TWITTER_BUTTON_DESC" />
+        <param name="twitter_button_via" type="text" default="" label="MOD_FLOAT_SOCIAL_VIA_TWITTER_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_VIA_TWITTER_BUTTON_DESC" />
+        <param name="spacer3" type="spacer" default="" label="" description="" />
+        
+        <param name="linkedin" type="" default="no" label="MOD_FLOAT_SOCIAL_LINKEDIN_LABEL" description="" />
+        <param name="linkedin_button_language" type="list" default="es_ES" label="MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_DESC">
+            <option value="es_ES">MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_ES</option>
+            <option value="en_US">MOD_FLOAT_SOCIAL_LANGUAGE_LINKEDIN_BUTTON_EN_US</option>
+        </param>
+        <param name="linkedin_button_url" type="text" default="" label="MOD_FLOAT_SOCIAL_URL_LINKEDIN_BUTTON_LABEL" description="MOD_FLOAT_SOCIAL_URL_LINKEDIN_BUTTON_DESC" />
+
+        
+    </params>
+    
+    <params group="advanced">
+        <param name="cache" type="list" default="1" label="MOD_FLOAT_SOCIAL_CACHE_LABEL" description="MOD_FLOAT_SOCIAL_CACHE_DESC">
+            <option value="1">MOD_FLOAT_SOCIAL_CACHE_1</option>
+            <option value="0">MOD_FLOAT_SOCIAL_CACHE_0</option>
+        </param>
+        <param name="cache_time" type="text" default="900" label="MOD_FLOAT_SOCIAL_CACHE_TIME_LABEL" description="MOD_FLOAT_SOCIAL_CACHE_TIME_DESC" />
+    </params>
+</install>
